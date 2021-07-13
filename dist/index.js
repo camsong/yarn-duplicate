@@ -110,11 +110,12 @@ async function getDuplicatedPkgs(path) {
             x %= P.length;
         }, 250);
         const pkgs = await Promise.all(Object.entries(duplicatedPkgTreeObj).map(async ([key, value]) => ({
-            name: key, value: value.length, "sizeInBrowser-KB": await fetchFileSize(key)
+            name: key, duplicates: value.length, "sizeInBrowser-KB": await fetchFileSize(key)
         })));
         clearInterval(loader);
         pkgs.sort((a, b) => { return b.value - a.value; });
-        console.table(pkgs, ['name', 'value', 'sizeInBrowser-KB']);
+        console.log('');
+        console.table(pkgs, ['name', 'duplicates', 'sizeInBrowser-KB']);
     }
 }
 // TODO 基于重复的pkg，来做分析，找到重复的来源。

@@ -132,13 +132,14 @@ async function getDuplicatedPkgs(path: string) {
     }, 250);
 
     const pkgs = await Promise.all(Object.entries(duplicatedPkgTreeObj).map(async ([key, value]): Promise<any> => ({
-      name: key, value: value.length, "sizeInBrowser-KB": await fetchFileSize(key)
+      name: key, duplicates: value.length, "sizeInBrowser-KB": await fetchFileSize(key)
     })));
 
     clearInterval(loader);
 
     pkgs.sort((a, b) => { return b.value - a.value; });
-    console.table(pkgs, ['name', 'value', 'sizeInBrowser-KB']);
+    console.log('');
+    console.table(pkgs, ['name', 'duplicates', 'sizeInBrowser-KB']);
   }
 }
 
