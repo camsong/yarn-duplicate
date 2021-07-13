@@ -22,15 +22,30 @@
   resolved "https://registry.npm.alibaba-inc.com/@tsconfig/node16/download/@tsconfig/node16-1.0.1.tgz#a6ca6a9a0ff366af433f42f5f0e124794ff6b8f1"
   integrity sha1-pspqmg/zZq9DP0L18OEkeU/2uPE=
 
+"@types/chalk@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.npm.alibaba-inc.com/@types/chalk/download/@types/chalk-2.2.0.tgz#b7f6e446f4511029ee8e3f43075fb5b73fbaa0ba"
+  integrity sha1-t/bkRvRRECnujj9DB1+1tz+6oLo=
+  dependencies:
+    chalk "*"
+
 "@types/figlet@^1.5.1":
   version "1.5.1"
   resolved "https://registry.npm.alibaba-inc.com/@types/figlet/download/@types/figlet-1.5.1.tgz#a9f06317b8900b7d3ad8d8bb577ec26225ac16a8"
   integrity sha1-qfBjF7iQC3062Ni7V37CYiWsFqg=
 
-"@types/node@^15.12.2":
-  version "15.12.2"
-  resolved "https://registry.npm.alibaba-inc.com/@types/node/download/@types/node-15.12.2.tgz#1f2b42c4be7156ff4a6f914b2fb03d05fa84e38d"
-  integrity sha1-HytCxL5xVv9Kb5FLL7A9BfqE440=
+"@types/node-fetch@*":
+  version "2.5.11"
+  resolved "https://registry.npm.alibaba-inc.com/@types/node-fetch/download/@types/node-fetch-2.5.11.tgz#ce22a2e65fc8999f4dbdb7ddbbcf187d755169e4"
+  integrity sha1-ziKi5l/ImZ9Nvbfdu88YfXVRaeQ=
+  dependencies:
+    "@types/node" "*"
+    form-data "^3.0.0"
+
+"@types/node@*":
+  version "16.3.1"
+  resolved "https://registry.npm.alibaba-inc.com/@types/node/download/@types/node-16.3.1.tgz#24691fa2b0c3ec8c0d34bfcfd495edac5593ebb4"
+  integrity sha1-JGkforDD7IwNNL/P1JXtrFWT67Q=
 
 "@types/yargs-parser@*":
   version "20.2.0"
@@ -59,7 +74,7 @@ ansi-regex@^5.0.0:
   resolved "https://registry.npm.alibaba-inc.com/ansi-regex/download/ansi-regex-5.0.0.tgz#388539f55179bf39339c81af30a654d69f87cb75"
   integrity sha1-OIU59VF5vzkznIGvMKZU1p+Hy3U=
 
-ansi-styles@^4.0.0:
+ansi-styles@^4.0.0, ansi-styles@^4.1.0:
   version "4.3.0"
   resolved "https://registry.npm.alibaba-inc.com/ansi-styles/download/ansi-styles-4.3.0.tgz#edd803628ae71c04c85ae7a0906edad34b648937"
   integrity sha1-7dgDYornHATIWuegkG7a00tkiTc=
@@ -71,10 +86,23 @@ arg@^4.1.0:
   resolved "https://registry.npm.alibaba-inc.com/arg/download/arg-4.1.3.tgz#269fc7ad5b8e42cb63c896d5666017261c144089"
   integrity sha1-Jp/HrVuOQstjyJbVZmAXJhwUQIk=
 
+asynckit@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.npm.alibaba-inc.com/asynckit/download/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
+  integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
+
 buffer-from@^1.0.0:
   version "1.1.1"
   resolved "https://registry.npm.alibaba-inc.com/buffer-from/download/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
   integrity sha1-MnE7wCj3XAL9txDXx7zsHyxgcO8=
+
+chalk@*, chalk@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npm.alibaba-inc.com/chalk/download/chalk-4.1.1.tgz#c80b3fab28bf6371e6863325eee67e618b77e6ad"
+  integrity sha1-yAs/qyi/Y3HmhjMl7uZ+YYt35q0=
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
 
 cliui@^7.0.2:
   version "7.0.4"
@@ -97,10 +125,22 @@ color-name@~1.1.4:
   resolved "https://registry.npm.alibaba-inc.com/color-name/download/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=
 
+combined-stream@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.npm.alibaba-inc.com/combined-stream/download/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
+  integrity sha1-w9RaizT9cwYxoRCoolIGgrMdWn8=
+  dependencies:
+    delayed-stream "~1.0.0"
+
 create-require@^1.1.0:
   version "1.1.1"
   resolved "https://registry.npm.alibaba-inc.com/create-require/download/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
   integrity sha1-wdfo8eX2z8n/ZfnNNS03NIdWwzM=
+
+delayed-stream@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.alibaba-inc.com/delayed-stream/download/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
+  integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
 diff@^4.0.1:
   version "4.0.2"
@@ -122,10 +162,24 @@ figlet@^1.5.0:
   resolved "https://registry.npm.alibaba-inc.com/figlet/download/figlet-1.5.0.tgz#2db4d00a584e5155a96080632db919213c3e003c"
   integrity sha1-LbTQClhOUVWpYIBjLbkZITw+ADw=
 
+form-data@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.npm.alibaba-inc.com/form-data/download/form-data-3.0.1.tgz#ebd53791b78356a99af9a300d4282c4d5eb9755f"
+  integrity sha1-69U3kbeDVqma+aMA1CgsTV65dV8=
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
+
 get-caller-file@^2.0.5:
   version "2.0.5"
   resolved "https://registry.npm.alibaba-inc.com/get-caller-file/download/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha1-T5RBKoLbMvNuOwuXQfipf+sDH34=
+
+has-flag@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.alibaba-inc.com/has-flag/download/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
+  integrity sha1-lEdx/ZyByBJlxNaUGGDaBrtZR5s=
 
 is-fullwidth-code-point@^3.0.0:
   version "3.0.0"
@@ -136,6 +190,23 @@ make-error@^1.1.1:
   version "1.3.6"
   resolved "https://registry.npm.alibaba-inc.com/make-error/download/make-error-1.3.6.tgz#2eb2e37ea9b67c4891f684a1394799af484cf7a2"
   integrity sha1-LrLjfqm2fEiR9oShOUeZr0hM96I=
+
+mime-db@1.48.0:
+  version "1.48.0"
+  resolved "https://registry.npm.alibaba-inc.com/mime-db/download/mime-db-1.48.0.tgz#e35b31045dd7eada3aaad537ed88a33afbef2d1d"
+  integrity sha1-41sxBF3X6to6qtU37YijOvvvLR0=
+
+mime-types@^2.1.12:
+  version "2.1.31"
+  resolved "https://registry.npm.alibaba-inc.com/mime-types/download/mime-types-2.1.31.tgz#a00d76b74317c61f9c2db2218b8e9f8e9c5c9e6b"
+  integrity sha1-oA12t0MXxh+cLbIhi46fjpxcnms=
+  dependencies:
+    mime-db "1.48.0"
+
+node-fetch@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.npm.alibaba-inc.com/node-fetch/download/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha1-BFvTI2Mfdu0uK1VXM5RBa2OaAFI=
 
 require-directory@^2.1.1:
   version "2.1.1"
@@ -170,6 +241,13 @@ strip-ansi@^6.0.0:
   integrity sha1-CxVx3XZpzNTz4G4U7x7tJiJa5TI=
   dependencies:
     ansi-regex "^5.0.0"
+
+supports-color@^7.1.0:
+  version "7.2.0"
+  resolved "https://registry.npm.alibaba-inc.com/supports-color/download/supports-color-7.2.0.tgz#1b7dcdcb32b8138801b3e478ba6a51caa89648da"
+  integrity sha1-G33NyzK4E4gBs+R4umpRyqiWSNo=
+  dependencies:
+    has-flag "^4.0.0"
 
 ts-node@^10.0.0:
   version "10.0.0"
