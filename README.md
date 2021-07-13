@@ -20,7 +20,13 @@ Only support Yarn V1.x right now.
 
 ### Showcase
 Run duplicate check under [redux](https://github.com/reduxjs/redux) source code
-![duplicate package example](https://user-images.githubusercontent.com/948896/125404240-01ae0900-e3e9-11eb-84ef-88b15e244190.png)
+![duplicate package example](https://user-images.githubusercontent.com/948896/125469600-a523bf97-594c-4de5-9c78-2d290128fdaf.png)
 
-If there're no duplicate packages:
+Meaning of columns:
+* `name`: name of the npm package
+* `duplicates`: times of the package duplicates
+* `sizeInBrowser-KB`: package size in bowser by KB.
+
+
+If there're no duplicate packages, the result would be:
 ![image](https://user-images.githubusercontent.com/948896/125404466-39b54c00-e3e9-11eb-8e47-505c2da696d2.png)
