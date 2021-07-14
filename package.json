@@ -22,6 +22,10 @@
     "ts-node": "^10.0.0",
     "typescript": "^4.3.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/camsong/yarn-duplicate.git"
+  },
   "dependencies": {
     "@yarnpkg/lockfile": "^1.1.0",
     "chalk": "^4.1.1",
